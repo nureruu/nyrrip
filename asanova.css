@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+}
+p{
+    color: rgb(255, 255, 255);
+    
+    background-color: black;
+    
+}
+h4{
+    color: rgb(255, 255, 255);
+    
+    background-color: black;
+}
+ul li{
+    color: rgb(255, 255, 255);
+    
+    background-color: black;
+}
+.assa {
+    border-bottom: 2px solid black;
+    color: rgb(0, 0, 0);
+}
+.background-image {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Высота на весь экран */
+}
+
+.background-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Позади содержимого */
+    transform: translate(-50%, -50%);
+    filter: blur(8px); /* Размытие изображения */
+}
+
+.content {
+    position: relative; /* Чтобы содержимое было на переднем плане */
+    z-index: 1; /* Выше фона */
+    color: white; /* Цвет текста для контраста */
+    text-align: center; /* Центрирование текста */
+    padding: 20px; /* Отступы для содержимого */
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
